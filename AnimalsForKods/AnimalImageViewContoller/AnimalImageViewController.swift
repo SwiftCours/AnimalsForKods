@@ -1,17 +1,22 @@
 //
-//  MainViewController.swift
+//  AnimalImageViewController.swift
 //  AnimalsForKods
 //
-//  Created by Artem Grebenkin on 10/12/19.
+//  Created by Вадим Гамзаев on 12.10.2019.
 //  Copyright © 2019 Вадим Гамзаев. All rights reserved.
 //
 
 import UIKit
 
-class MainViewController: UIViewController {
-
-
+class AnimalImageViewController: UIViewController {
     
+    @IBOutlet var animalNameLabel: UILabel!
+
+    @IBOutlet var firstImage: UIImageView!
+    @IBOutlet var secondImage: UIImageView!
+    @IBOutlet var thirdImage: UIImageView!
+    
+    @IBOutlet var animalDescription: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

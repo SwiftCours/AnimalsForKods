@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0171FF92351D33F00D3BAB2 /* ExtentionButton + FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0171FF82351D33F00D3BAB2 /* ExtentionButton + FirstVC.swift */; };
+		E0171FFB2351D98300D3BAB2 /* AnimalImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0171FFA2351D98300D3BAB2 /* AnimalImageViewController.swift */; };
 		E0D447C32350E10E00C9D8CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D447C22350E10E00C9D8CB /* AppDelegate.swift */; };
 		E0D447C52350E10E00C9D8CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D447C42350E10E00C9D8CB /* SceneDelegate.swift */; };
 		E0D447CA2350E10F00C9D8CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0D447C82350E10F00C9D8CB /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E0171FF82351D33F00D3BAB2 /* ExtentionButton + FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtentionButton + FirstVC.swift"; sourceTree = "<group>"; };
+		E0171FFA2351D98300D3BAB2 /* AnimalImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalImageViewController.swift; sourceTree = "<group>"; };
 		E0D447BF2350E10E00C9D8CB /* AnimalsForKods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalsForKods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D447C22350E10E00C9D8CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0D447C42350E10E00C9D8CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0171FF72351CCBA00D3BAB2 /* AnimalImageViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				E0171FFA2351D98300D3BAB2 /* AnimalImageViewController.swift */,
+			);
+			path = AnimalImageViewContoller;
+			sourceTree = "<group>";
+		};
 		E0D447B62350E10E00C9D8CB = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +79,7 @@
 				E0D447C82350E10F00C9D8CB /* Main.storyboard */,
 				EE14E4D92351053000F903EC /* MainViewController */,
 				EE14E4DA2351060900F903EC /* FirstViewController */,
+				E0171FF72351CCBA00D3BAB2 /* AnimalImageViewContoller */,
 				EE14E4DD2351099D00F903EC /* Data */,
 				E0D447CB2350E11100C9D8CB /* Assets.xcassets */,
 				E0D447CD2350E11100C9D8CB /* LaunchScreen.storyboard */,
@@ -88,6 +101,7 @@
 			children = (
 				EE14E4DB2351064E00F903EC /* FirstViewController.swift */,
 				EE14E4E023510DDB00F903EC /* ExtensionPicker + FirstVC.swift */,
+				E0171FF82351D33F00D3BAB2 /* ExtentionButton + FirstVC.swift */,
 			);
 			path = FirstViewController;
 			sourceTree = "<group>";
@@ -171,11 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0171FF92351D33F00D3BAB2 /* ExtentionButton + FirstVC.swift in Sources */,
 				EE14E4D82351020800F903EC /* MainViewController.swift in Sources */,
 				EE14E4DF235109D600F903EC /* DataManager.swift in Sources */,
 				E0D447C32350E10E00C9D8CB /* AppDelegate.swift in Sources */,
 				EE14E4E123510DDB00F903EC /* ExtensionPicker + FirstVC.swift in Sources */,
 				E0D447C52350E10E00C9D8CB /* SceneDelegate.swift in Sources */,
+				E0171FFB2351D98300D3BAB2 /* AnimalImageViewController.swift in Sources */,
 				EE14E4DC2351064E00F903EC /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

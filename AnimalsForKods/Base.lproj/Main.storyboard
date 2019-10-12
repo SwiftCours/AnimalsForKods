@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o6f-Bs-cWV">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,12 +12,12 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="AnimalsForKods" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRI-J7-sLt">
-                                <rect key="frame" x="20" y="88" width="374" height="240"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="20" y="44" width="280" height="240"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="nLt-R7-ZnE"/>
                                 </constraints>
@@ -47,25 +47,128 @@
             <objects>
                 <viewController id="tuv-SB-yBj" customClass="FirstViewController" customModule="AnimalsForKods" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jPW-7O-IC3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z6j-jT-Iqk">
-                                <rect key="frame" x="20" y="88" width="374" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Собери животное" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJw-dh-rSY">
+                                <rect key="frame" x="37.5" y="84" width="245" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSx-9L-KUc">
+                                <rect key="frame" x="80" y="426" width="160" height="48"/>
+                                <color key="backgroundColor" red="0.7352723341153421" green="0.52858572107492696" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Результат">
+                                    <color key="titleColor" red="0.98525891369999996" green="1" blue="0.97742255690000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="getResponse:" destination="tuv-SB-yBj" eventType="touchUpInside" id="3lr-eQ-XW8"/>
+                                    <segue destination="fCF-oo-m6U" kind="presentation" id="rm5-uB-ATi"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6j-jT-Iqk">
+                                <rect key="frame" x="0.0" y="180" width="320" height="216"/>
+                                <color key="backgroundColor" red="0.98525891370088026" green="1" blue="0.97742255686018675" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.84482039928607411" green="0.76392197762617242" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="VSx-9L-KUc" firstAttribute="width" secondItem="z6j-jT-Iqk" secondAttribute="width" multiplier="0.5" id="26d-Ao-yk9"/>
+                            <constraint firstItem="z6j-jT-Iqk" firstAttribute="top" secondItem="sJw-dh-rSY" secondAttribute="bottom" constant="60" id="7Hg-G0-7ja"/>
+                            <constraint firstItem="sJw-dh-rSY" firstAttribute="top" secondItem="Pd1-uF-FjV" secondAttribute="top" constant="40" id="Pcs-yG-ofl"/>
+                            <constraint firstItem="sJw-dh-rSY" firstAttribute="centerX" secondItem="Pd1-uF-FjV" secondAttribute="centerX" id="R0J-4h-Goz"/>
+                            <constraint firstItem="VSx-9L-KUc" firstAttribute="top" secondItem="z6j-jT-Iqk" secondAttribute="bottom" constant="30" id="VBy-mf-4pg"/>
+                            <constraint firstItem="z6j-jT-Iqk" firstAttribute="centerX" secondItem="Pd1-uF-FjV" secondAttribute="centerX" id="iwD-kc-gKt"/>
+                            <constraint firstItem="VSx-9L-KUc" firstAttribute="centerX" secondItem="Pd1-uF-FjV" secondAttribute="centerX" id="ukZ-9U-eQC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Pd1-uF-FjV"/>
                     </view>
                     <navigationItem key="navigationItem" id="Zmo-xi-hc4"/>
                     <connections>
                         <outlet property="animalsNamesPickerView" destination="z6j-jT-Iqk" id="QDy-zB-5AV"/>
+                        <outlet property="getResponseButton" destination="VSx-9L-KUc" id="aPh-Sh-UMC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqz-ia-Rmm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2028.985507246377" y="-253.125"/>
+            <point key="canvasLocation" x="1947.826086956522" y="138.58695652173915"/>
+        </scene>
+        <!--Animal Image View Controller-->
+        <scene sceneID="rLB-11-XJ6">
+            <objects>
+                <viewController id="fCF-oo-m6U" customClass="AnimalImageViewController" customModule="AnimalsForKods" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZwV-Dn-Itb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Что у нас получилось?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Q6B-3I-fpg">
+                                <rect key="frame" x="6.5" y="60" width="307.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AnimalName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="t4R-dN-0H8">
+                                <rect key="frame" x="77.5" y="126" width="165" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PUZ-ll-0zb">
+                                <rect key="frame" x="20" y="192" width="280" height="137"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="spY-53-KA3">
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="137"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d6z-5K-yHe">
+                                        <rect key="frame" x="96" y="0.0" width="88" height="137"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HCw-wZ-xfs">
+                                        <rect key="frame" x="192" y="0.0" width="88" height="137"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="d6z-5K-yHe" firstAttribute="height" secondItem="HCw-wZ-xfs" secondAttribute="height" id="X5e-4M-owm"/>
+                                    <constraint firstItem="spY-53-KA3" firstAttribute="width" secondItem="d6z-5K-yHe" secondAttribute="width" id="Zk1-3m-kfm"/>
+                                    <constraint firstItem="d6z-5K-yHe" firstAttribute="width" secondItem="HCw-wZ-xfs" secondAttribute="width" id="iFo-Jh-YwP"/>
+                                    <constraint firstItem="spY-53-KA3" firstAttribute="height" secondItem="d6z-5K-yHe" secondAttribute="height" id="wYu-Fn-jhg"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i30-1C-Iqm">
+                                <rect key="frame" x="114" y="359" width="92" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Q6B-3I-fpg" firstAttribute="centerX" secondItem="e63-kT-VaD" secondAttribute="centerX" id="5P4-te-wo4"/>
+                            <constraint firstItem="i30-1C-Iqm" firstAttribute="top" secondItem="d6z-5K-yHe" secondAttribute="bottom" constant="30" id="7QT-3d-Dnu"/>
+                            <constraint firstItem="PUZ-ll-0zb" firstAttribute="leading" secondItem="e63-kT-VaD" secondAttribute="leading" constant="20" id="Mtb-lw-cLc"/>
+                            <constraint firstItem="t4R-dN-0H8" firstAttribute="centerX" secondItem="e63-kT-VaD" secondAttribute="centerX" id="Nx7-9Q-NC8"/>
+                            <constraint firstItem="t4R-dN-0H8" firstAttribute="top" secondItem="Q6B-3I-fpg" secondAttribute="bottom" constant="30" id="SFr-lr-PQi"/>
+                            <constraint firstItem="Q6B-3I-fpg" firstAttribute="top" secondItem="e63-kT-VaD" secondAttribute="top" constant="60" id="Tcv-NF-cN6"/>
+                            <constraint firstItem="PUZ-ll-0zb" firstAttribute="height" secondItem="e63-kT-VaD" secondAttribute="height" multiplier="0.25" id="bST-lg-P3k"/>
+                            <constraint firstItem="PUZ-ll-0zb" firstAttribute="centerX" secondItem="e63-kT-VaD" secondAttribute="centerX" id="eJD-Q3-Vgl"/>
+                            <constraint firstItem="PUZ-ll-0zb" firstAttribute="top" secondItem="t4R-dN-0H8" secondAttribute="bottom" constant="30" id="kfd-ty-HcY"/>
+                            <constraint firstItem="e63-kT-VaD" firstAttribute="trailing" secondItem="PUZ-ll-0zb" secondAttribute="trailing" constant="20" id="qO3-9b-Xm1"/>
+                            <constraint firstItem="i30-1C-Iqm" firstAttribute="centerX" secondItem="e63-kT-VaD" secondAttribute="centerX" id="rjE-LW-ITU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e63-kT-VaD"/>
+                    </view>
+                    <connections>
+                        <outlet property="animalDescription" destination="i30-1C-Iqm" id="cgX-Qp-zxA"/>
+                        <outlet property="animalNameLabel" destination="t4R-dN-0H8" id="YtW-Ae-JUU"/>
+                        <outlet property="firstImage" destination="spY-53-KA3" id="clv-6b-sza"/>
+                        <outlet property="secondImage" destination="d6z-5K-yHe" id="r08-DK-3Tr"/>
+                        <outlet property="thirdImage" destination="HCw-wZ-xfs" id="b0I-WA-9JT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGo-wb-2ru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2836.2318840579715" y="139.4021739130435"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Ma-FA-QjL">
@@ -73,7 +176,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o6f-Bs-cWV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Bb-fF-zP3">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

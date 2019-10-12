@@ -11,6 +11,7 @@ import UIKit
 class FirstViewController: UIViewController {
 
     @IBOutlet weak var animalsNamesPickerView: UIPickerView!
+    @IBOutlet weak var getResponseButton: UIButton!
     
     var names = [[String]]()
     
@@ -20,6 +21,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
 
         setPickerView()
+        animalsNamesPickerView.layer.cornerRadius = view.frame.size.width / 20
         
     }
     
