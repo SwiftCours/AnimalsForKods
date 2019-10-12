@@ -115,17 +115,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PUZ-ll-0zb">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="PUZ-ll-0zb">
                                 <rect key="frame" x="20" y="192" width="280" height="137"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="spY-53-KA3">
-                                        <rect key="frame" x="0.0" y="0.0" width="88" height="137"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="137"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d6z-5K-yHe">
-                                        <rect key="frame" x="96" y="0.0" width="88" height="137"/>
+                                        <rect key="frame" x="94.5" y="0.0" width="91" height="137"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HCw-wZ-xfs">
-                                        <rect key="frame" x="192" y="0.0" width="88" height="137"/>
+                                        <rect key="frame" x="188.5" y="0.0" width="91.5" height="137"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>

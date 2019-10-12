@@ -11,10 +11,10 @@ import Foundation
 class DataManager {
     static let shared = DataManager()
     
-    let firstPartName = ["Кро","Но","Мед"]
+    let firstPartName = ["Ко","Пан","Мед","Св","О","Но"]
     
-    let secondPartName = ["ко","со","ве"]
+    let secondPartName = ["ро","д","ве","ин","ле","со"]
     
-    let thirdPartName = ["дил","рог","дь"]
+    let thirdPartName = ["ва","а","дь","ья","нь","рог"]
     
 }
