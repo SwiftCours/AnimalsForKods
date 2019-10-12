@@ -65,7 +65,7 @@
                                 </state>
                                 <connections>
                                     <action selector="getResponse:" destination="tuv-SB-yBj" eventType="touchUpInside" id="3lr-eQ-XW8"/>
-                                    <segue destination="fCF-oo-m6U" kind="presentation" id="rm5-uB-ATi"/>
+                                    <segue destination="fCF-oo-m6U" kind="presentation" identifier="ShowAnimal" id="rm5-uB-ATi"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6j-jT-Iqk">

@@ -13,18 +13,23 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var animalsNamesPickerView: UIPickerView!
     @IBOutlet weak var getResponseButton: UIButton!
     
-    var names = [[String]]()
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        var names = [[String]]()
+        var firstPickIndex: Int = 0
+        var secondPickIndex: Int = 0
+        var thirdPickIndex: Int = 0
+        var animalName: String = ""
 
-        setPickerView()
-        animalsNamesPickerView.layer.cornerRadius = view.frame.size.width / 20
         
+        
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+
+            setPickerView()
+            animalsNamesPickerView.layer.cornerRadius = view.frame.size.width / 20
+            
+        }
+        
+
+
     }
-    
-
-
-}

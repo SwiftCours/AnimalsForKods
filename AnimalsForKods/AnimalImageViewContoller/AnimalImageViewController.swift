@@ -18,21 +18,30 @@ class AnimalImageViewController: UIViewController {
     
     @IBOutlet var animalDescription: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        var animalTitle = ""
+        var firstImageIndex: Int = 0
+        var secondImageIndex: Int = 0
+        var thirdImageIndex: Int = 0
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            animalNameLabel.text = animalTitle
+            
+            setImage()
+        }
+        
 
-        // Do any additional setup after loading the view.
+        func setImage() {
+            
+            firstImage.image = UIImage(named:
+            DataManager.shared.firstPartName[firstImageIndex])
+            
+            secondImage.image = UIImage(named:
+            DataManager.shared.secondPartName[secondImageIndex])
+            
+            thirdImage.image = UIImage(named:
+            DataManager.shared.thirdPartName[thirdImageIndex])
+        }
+
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
