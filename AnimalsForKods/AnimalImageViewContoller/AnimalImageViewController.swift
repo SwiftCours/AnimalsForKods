@@ -11,37 +11,38 @@ import UIKit
 class AnimalImageViewController: UIViewController {
     
     @IBOutlet var animalNameLabel: UILabel!
-
+    
     @IBOutlet var firstImage: UIImageView!
     @IBOutlet var secondImage: UIImageView!
     @IBOutlet var thirdImage: UIImageView!
     
     @IBOutlet var animalDescription: UILabel!
     
-        var animalTitle = ""
-        var firstImageIndex: Int = 0
-        var secondImageIndex: Int = 0
-        var thirdImageIndex: Int = 0
+    var animalTitle = ""
+    var firstImageIndex = 0
+    var secondImageIndex = 0
+    var thirdImageIndex = 0
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            
-            animalNameLabel.text = animalTitle
-            
-            setImage()
-        }
-        
-
-        func setImage() {
-            
-            firstImage.image = UIImage(named:
-            DataManager.shared.firstPartName[firstImageIndex])
-            
-            secondImage.image = UIImage(named:
-            DataManager.shared.secondPartName[secondImageIndex])
-            
-            thirdImage.image = UIImage(named:
-            DataManager.shared.thirdPartName[thirdImageIndex])
-        }
-
+        animalNameLabel.text = animalTitle
+        animalDescription.text = setDescription()
+        setImage()
     }
+    
+    func setImage() {
+        firstImage.image = UIImage(named:
+            DataManager.shared.firstPartName[firstImageIndex])
+        secondImage.image = UIImage(named:
+            DataManager.shared.secondPartName[secondImageIndex])
+        thirdImage.image = UIImage(named:
+            DataManager.shared.thirdPartName[thirdImageIndex])
+    }
+    
+    func setDescription() -> String {
+        return DataManager.shared.thirdPartDiscription[thirdImageIndex] +
+            DataManager.shared.secondPartDiscription[secondImageIndex] +
+            DataManager.shared.firstPartDiscription [firstImageIndex]
+    }
+}
