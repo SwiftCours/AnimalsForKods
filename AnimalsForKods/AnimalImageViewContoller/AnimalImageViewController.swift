@@ -29,6 +29,7 @@ class AnimalImageViewController: UIViewController {
         animalNameLabel.text = animalTitle
         animalDescription.text = setDescription()
         setImage()
+      
     }
     
     func setImage() {
@@ -45,4 +46,9 @@ class AnimalImageViewController: UIViewController {
             DataManager.shared.secondPartDiscription[secondImageIndex] +
             DataManager.shared.firstPartDiscription [firstImageIndex]
     }
+    
+    @IBAction func doneButton(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
 }
